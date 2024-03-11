@@ -13,6 +13,13 @@ Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e
 <hr />
 
 ## Exercício 02
-Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, NomeDoUsuario".<br />
+Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, { NomeDoUsuario }".<br />
 <a href="./tasks/task02.html">Resolução</a><br />
 ![Print do exercício concluído](./.github/ex02.png)
+
+<hr />
+
+## Exercício 03
+Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, { NomeDoUsuario }, sua idade é { idade }".<br />
+<a href="./tasks/task03.html">Resolução</a><br />
+![Print do exercício concluído](./.github/ex03.png)
