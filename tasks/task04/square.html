@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando a área do Quadrado</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+
+    button{
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    input{
+      padding: 0.5rem;
+    }
+
+    img{
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+      img{
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <figure>
+      <img src="./images/square-area.jpg" alt="Imagem da fórmula da área de um quadrado">
+    </figure>
+  
+    <form>
+      <label for="side">Informe o valor do lado:</label>
+      <input type="number" id="side" required>
+      <button type="submit">Calcular</button>
+    </form>
+  </main>
+</body>
+<script>
+  const form = document.querySelector('form')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    const side = document.getElementById('side').value
+    if (side === "") {
+      alert('Usuário, preencha corretamente os campos!')
+    }
+    else{
+      const result = Math.pow(side, 2)
+      alert(`Calculo da área do quadrado: ${side}² = ${result}`)
+    }
+  })
+</script>
+</html>

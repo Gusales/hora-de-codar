@@ -23,3 +23,19 @@ Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a
 Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, { NomeDoUsuario }, sua idade é { idade }".<br />
 <a href="./tasks/task03.html">Resolução</a><br />
 ![Print do exercício concluído](./.github/ex03.png)
+
+<hr />
+
+## Exercício 04
+Escreva um programa em Javascript que faça o cálculo das seguintes formas geométricas: .<br />
+- Retângulo;
+- Quadrado;
+- Losango;
+- Trapézio;
+- Paralelogramo;
+- Triãngulo;
+- Círculo;
+
+
+<a href="./tasks/task03.html">Resolução</a><br />
+![Print do exercício concluído](./.github/ex03.png)
