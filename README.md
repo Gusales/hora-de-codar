@@ -38,4 +38,4 @@ Escreva um programa em Javascript que faça o cálculo das seguintes formas geom
 
 
 <a href="./tasks/task03.html">Resolução</a><br />
-![Print do exercício concluído](./.github/ex03.png)
+![Print do exercício concluído](./.github/ex04.png)
