@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculando a área do Retângulo</title>
+  <title>Calculando a área do Trapézio</title>
 
   <style>
     * {
@@ -42,16 +42,18 @@
 <body>
   <main>
     <figure>
-      <img src="./images/rectangle-area.webp" alt="Imagem da fórmula da área de um retângulo">
+      <img src="./images/trapeze-area.webp" alt="Imagem da fórmula da área de um trapézio" width="700px">
     </figure>
   
     <form>
-      <label for="base">Informe o valor da base:</label>
-      <input type="number" id="base" required>
-  
-      <label for="height">Informe a altura: </label>
+      <label for="largeBase">Informe o valor da base maior:</label>
+      <input type="number" id="largeBase" required>
+
+      <label for="smallBase">Informe o valor da base menor:</label>
+      <input type="number" id="smallBase" required>
+
+      <label for="height">Informe o valor da altura:</label>
       <input type="number" id="height" required>
-  
       <button type="submit">Calcular</button>
     </form>
   </main>
@@ -61,15 +63,20 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
 
-    const base = document.getElementById('base').value
-    const height = document.getElementById('height').value
+    let largeBase = document.getElementById('largeBase').value
+    let smallBase= document.getElementById('smallBase').value
+    let height = document.getElementById('height').value
 
-    if (base === "" || height === "") {
+    if (largeBase === "" || smallBase === "" || height === "") {
       alert('Usuário, preencha corretamente os campos!')
     }
     else{
-      const result = base * height
-      alert(`Calculo da área do retângulo: ${base} x ${height} = ${result}`)
+        largeBase = parseInt(largeBase)
+        smallBase = parseInt(smallBase)
+        height = parseInt(height)
+
+      const result = ((largeBase + smallBase) * height ) / 2
+      alert(`Calculo da área do quadrado: ${largeBase} + ${smallBase} x ${height} = ${result}`)
     }
   })
 </script>

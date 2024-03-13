@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculando a área do Retângulo</title>
+  <title>Calculando a área do Losango</title>
 
   <style>
     * {
@@ -42,15 +42,15 @@
 <body>
   <main>
     <figure>
-      <img src="./images/rectangle-area.webp" alt="Imagem da fórmula da área de um retângulo">
+      <img src="./images/diamond-area.webp" alt="Imagem da fórmula da área de um retângulo" width="700px">
     </figure>
   
     <form>
-      <label for="base">Informe o valor da base:</label>
-      <input type="number" id="base" required>
+      <label for="base">Informe o valor da diagonal maior</label>
+      <input type="number" id="largeDiagonal" required>
   
-      <label for="height">Informe a altura: </label>
-      <input type="number" id="height" required>
+      <label for="height">Informe o valor da diagonal menor</label>
+      <input type="number" id="smallDiagonal" required>
   
       <button type="submit">Calcular</button>
     </form>
@@ -61,15 +61,15 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
 
-    const base = document.getElementById('base').value
-    const height = document.getElementById('height').value
+    const largeDiagonal = document.getElementById('largeDiagonal').value
+    const smallDiagonal = document.getElementById('smallDiagonal').value
 
-    if (base === "" || height === "") {
+    if (largeDiagonal === "" || smallDiagonal === "") {
       alert('Usuário, preencha corretamente os campos!')
     }
     else{
-      const result = base * height
-      alert(`Calculo da área do retângulo: ${base} x ${height} = ${result}`)
+      const result = (largeDiagonal * smallDiagonal) / 2
+      alert(`Calculo da área do losango: (${largeDiagonal} x ${smallDiagonal}) / 2 = ${result}`)
     }
   })
 </script>
